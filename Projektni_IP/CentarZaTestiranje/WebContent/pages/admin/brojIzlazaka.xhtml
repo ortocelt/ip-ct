@@ -1,0 +1,31 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:form>
+<h:dataTable value="#{brojIzlazakaBean.brojIzlazaka}" var="izlazak">
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="ID"/>
+	</f:facet>
+		<h:outputText value="#{izlazak.id}"/>
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Naziv"/>
+	</f:facet>
+		<h:outputText value="#{izlazak.naziv}"/>		
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Broj izlazaka"/>
+	</f:facet>
+		<h:outputText value="#{izlazak.broj_izlazaka}"/>		
+</h:column>
+
+</h:dataTable>
+</h:form>
+
+</ui:composition>

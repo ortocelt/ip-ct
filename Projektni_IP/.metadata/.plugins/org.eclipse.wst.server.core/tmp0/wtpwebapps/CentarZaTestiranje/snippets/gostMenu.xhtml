@@ -1,0 +1,17 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:form>
+<h:panelGrid columns="1" >
+<h:commandLink value="Pregled testova" action="#{linkoviBean.getNajavljeniTestovi()}"/>
+<h:commandLink value="Login" action="#{linkoviBean.getLogin()}"/>
+<h:commandLink value="Registracija" action="#{linkoviBean.getRegistracija()}"/>
+<h:outputLink value="feedTestiranje1.xml">RSS</h:outputLink>
+</h:panelGrid>
+</h:form>
+
+</ui:composition>

@@ -1,0 +1,34 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets"
+    			xmlns:p="http://primefaces.org/ui">
+    			
+    			
+<h:form>	
+	<h:dataTable value="#{testerBean.polaganja}" var="polaganje">
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="Naziv testa"/>
+	</f:facet>	
+		<h:outputText value="#{polaganje.naziv}"/>
+	</h:column>
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="ID testa"/>
+	</f:facet>	
+		<h:outputText value="#{polaganje.test_id}"/>
+	</h:column>
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="Datum polaganja"/>
+	</f:facet>	
+		<h:outputText value="#{polaganje.datum_polaganja}"/>
+	</h:column>
+	<h:column>
+		<h:commandLink value="Pregled" action="#{testerBean.pregledPoPolaganju(polaganje) }"/>
+	</h:column>
+	</h:dataTable>
+</h:form>
+
+</ui:composition>

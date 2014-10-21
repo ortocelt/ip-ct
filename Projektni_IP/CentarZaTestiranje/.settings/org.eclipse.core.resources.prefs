@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//WebContent/index.xhtml=UTF-8
+encoding//WebContent/pages/admin/adminIndex.xhtml=UTF-8
+encoding//WebContent/pages/admin/adminKreiranje.xhtml=UTF-8
+encoding//WebContent/pages/admin/adminStatistika.xhtml=UTF-8
+encoding//WebContent/pages/gost/loginStranica.xhtml=UTF-8
+encoding//WebContent/pages/kandidat/danasnjaPolaganja.xhtml=UTF-8
+encoding//WebContent/pages/kandidat/kandidatIndex.xhtml=UTF-8
+encoding//WebContent/pages/kandidat/najavljeniTestovi.xhtml=UTF-8
+encoding//WebContent/pages/kandidat/prijavljeniTestovi.xhtml=UTF-8
+encoding//WebContent/pages/kandidat/unosSifre.xhtml=UTF-8
+encoding//WebContent/pages/tester/kandidatiPoPolaganju.xhtml=UTF-8
+encoding//WebContent/pages/tester/kandidatovTest.xhtml=UTF-8
+encoding//WebContent/pages/tester/procenatProlaznostiPoTestu.xhtml=UTF-8
+encoding//WebContent/pages/tester/testerIndex.xhtml=UTF-8
+encoding//WebContent/pages/tester/testerPregledPolaganja.xhtml=UTF-8

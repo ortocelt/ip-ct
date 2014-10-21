@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+ <h:form>
+<h:dataTable value="#{gostBean.sviTestovi}" var="test">
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="ID"/>
+	</f:facet>
+		<h:outputText value="#{test.id}"/>
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Naziv"/>
+	</f:facet>
+		<h:outputText value="#{test.naziv_testa}"/>		
+</h:column>
+<h:column>
+	<h:commandButton value="Rijesi test" action="#{userBean.rijesiTest(test)}"/>
+</h:column>	
+
+</h:dataTable>
+</h:form>
+</ui:composition>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;webservice.wsBean.sifraTesta&apos; in &apos;webservice.wsBean&apos;&#x0D;&#x0A;- Original project: &apos;CentarZaTestiranje&apos;&#x0D;&#x0A;- Original element: &apos;webservice.wsBean.sifraTesta&apos;&#x0D;&#x0A;- Getter method name: &apos;getSifraTesta&apos;&#x0D;&#x0A;- Setter method name: &apos;setSifraTesta&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;sifraTesta&apos;" flags="589830" getter="getSifraTesta" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;webservice{wsBean.java[wsBean^sifraTesta" insertion="11" setter="setSifraTesta" stamp="1406903390613" version="1.0" visibility="1"/>
+</session>

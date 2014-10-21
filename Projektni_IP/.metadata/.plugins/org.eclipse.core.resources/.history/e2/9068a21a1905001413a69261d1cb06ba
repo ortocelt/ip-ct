@@ -1,0 +1,76 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets"
+    			xmlns:rich="http://richfaces.org/rich ">
+    			
+    			
+<h:form>
+
+	Naslov: <h:inputText value="#{testBean.tempTest.naziv}"/>
+	Rok za prijavu: <h:inputText value="#{testBean.tempRok}">
+	 <f:convertDateTime pattern="yyyy-MM-dd HH:mm:ss" timeZone="GMT+2" /></h:inputText> 
+	Datum polaganja: <h:inputText value="#{testBean.tempDatum}">
+	 <f:convertDateTime pattern="yyyy-MM-dd HH:mm:ss" timeZone="GMT+2"  /></h:inputText>
+	Potrebno bodova: <h:inputText value="#{testBean.tempTest.potrebno_bodova}"/>
+	Najavljen: <h:selectBooleanCheckbox value="#{testBean.tempTest.najavljen}"/>
+	<!-- Trajanje: <h:inputText value="#{testBean.tempTest.trajanje}">
+	<f:convertDateTime pattern="HH:mm:ss" /></h:inputText>-->
+	Sifra testa: <h:inputText value="#{testBean.tempTest.sifra_testa}"/>
+	Broj kandidata:<h:inputText value="#{testBean.tempTest.max_broj_kandidata}"/>
+	
+					<h:commandButton value="Kreirajte test" action="#{testBean.dodavanjeTesta}"/>
+
+			<h:panelGrid columns="2">
+				<h:column>
+	Unesite pitanje: <h:inputText value="#{testBean.tempPitanje.tekst}">
+					</h:inputText>
+				</h:column>
+				<h:form>
+				<h:column>
+					<h:commandButton value="Dodajte pitanje" action="#{testBean.dodavanjePitanja}"/>
+				</h:column>
+				</h:form>
+			</h:panelGrid>
+			<h:panelGrid columns="4">
+				<h:column>
+	Unesite odgovor: <h:inputText value="#{testBean.tempOdgovor.tekst}"/>
+				</h:column>
+				<h:column>
+	Broj bodova:<h:inputText value="#{testBean.tempOdgovor.bodovi}"/>
+				</h:column>
+				<h:column>
+	Tacno/Netacno: <h:selectBooleanCheckbox></h:selectBooleanCheckbox>				
+				</h:column>
+				<h:column>
+				<h:commandButton value="Dodajte odgovor" action="#{testBean.dodavanjeOdgovora}"/>
+				</h:column>
+			</h:panelGrid>
+	</h:form>
+
+
+<h:form>
+<h:dataTable value="#{testBean.kolekcijaTempPitanja}" var="pitanje">
+<h:column>
+	<h:outputText value="#{pitanje.tekst}"/>	
+	
+<h:column>
+
+	<h:dataTable value="#{testBean.getKolekcijaTempOdgovora(pitanje.id)}" var="odgovori">
+		<h:column>
+			<h:outputText value="#{odgovori.tekst}"/>			
+		</h:column>
+		<h:column>
+		<h:selectBooleanCheckbox />
+		</h:column>
+		<h:column>
+		<h:commandLink value="Obrisi pitanje" action="#{testBean.brisanjeOdgovoraPriKreiranju(odgovori)}"/>
+		</h:column>
+	</h:dataTable>
+</h:column></h:column>
+
+
+</h:dataTable>
+</h:form>
+
+</ui:composition>

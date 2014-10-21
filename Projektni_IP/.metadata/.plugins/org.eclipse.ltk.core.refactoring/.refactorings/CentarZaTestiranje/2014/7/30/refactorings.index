@@ -1,0 +1,4 @@
+1406040630529	Encapsulate field 'polaganje_id'
+1406080181437	Encapsulate field 'procenatProlaznosti'
+1406150756756	Rename resource 'procenatProlaznostiPoTestu.jsp'
+1406150851103	Rename resource 'procenatProlaznostiPoTestuContent.jsp'

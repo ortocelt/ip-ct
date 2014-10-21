@@ -1,0 +1,60 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets"
+    			xmlns:p="http://primefaces.org/ui">
+    			
+    			
+<h:form>	
+	<h:dataTable value="#{testerBean.kandidatiNaPolaganju}" var="polaganjeKandidati">
+	<h:outputText value="#{polaganjeKandidati.naziv}}"/>
+	
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="ID kandidata"/>
+	</f:facet>	
+		<h:outputText value="#{polaganjeKandidati.id}"/>
+	</h:column>
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="Ime"/>
+	</f:facet>	
+		<h:outputText value="#{polaganjeKandidati.ime}"/>
+	</h:column>
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="Prezime"/>
+	</f:facet>	
+		<h:outputText value="#{polaganjeKandidati.prezime}"/>
+	</h:column>
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="Naziv testa"/>
+	</f:facet>	
+		<h:outputText value="#{polaganjeKandidati.naziv}"/>
+	</h:column>
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="Datum polaganja"/>
+	</f:facet>	
+		<h:outputText value="#{polaganjeKandidati.datum_polaganja}"/>
+	</h:column>
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="Ostvareno bodova"/>
+	</f:facet>	
+		<h:outputText value="#{polaganjeKandidati.bodovi}"/>
+	</h:column>
+	<h:column>
+	<f:facet name="header">
+		<h:outputText value="Bodovi za prolaz"/>
+	</f:facet>	
+		<h:outputText value="#{polaganjeKandidati.potrebno_bodova}"/>
+	</h:column>
+	<h:column>
+		<h:commandLink value="Pregled" action="#{testBean.kandidatovTest(polaganjeKandidati.id, polaganjeKandidati.test_id,polaganjeKandidati.polaganje_id)}"/>
+	</h:column>
+	</h:dataTable>
+</h:form>
+
+</ui:composition>

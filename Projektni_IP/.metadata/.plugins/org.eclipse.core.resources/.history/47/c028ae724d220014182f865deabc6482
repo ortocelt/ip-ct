@@ -1,0 +1,108 @@
+package webservice;
+
+import java.rmi.RemoteException;
+
+
+
+
+
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import webservice.ValidatorKreditneKarticeStub.GetCreditCardType;
+
+
+@ManagedBean
+@SessionScoped
+public class wsBean {
+	
+	private int aClient;
+	private int bClient;
+	private String testWS;
+	private String broj;
+	private String sifraTesta;
+	
+	
+	
+	public String getBroj() {
+		return broj;
+	}
+
+	public void setBroj(String broj) {
+		this.broj = broj;
+	}
+
+	public String getTestWS() {
+		return testWS;
+	}
+
+	public void setTestWS(String testWS) {
+		this.testWS = testWS;
+	}
+
+	private int rez;
+
+	public int getRez() {
+		return rez;
+	}
+
+	public void setRez(int rez) {
+		this.rez = rez;
+	}
+
+	public int getaClient() {
+		return aClient;
+	}
+
+	public void setaClient(int aClient) {
+		this.aClient = aClient;
+	}
+
+	public int getbClient() {
+		return bClient;
+	}
+
+	public void setbClient(int bClient) {
+		this.bClient = bClient;
+	}
+
+	public wsBean() {
+		// TODO Auto-generated constructor stub
+	}
+/*	
+	public void validateCreditCard() throws RemoteException{
+		CreditCardValidatorStub stub = new CreditCardValidatorStub();
+		IsCreditCardValid valid = new IsCreditCardValid();	
+		valid.setNumber(this.creditCardNumber);			
+		this.responseMessage = stub.isCreditCardValid(valid).get_return();
+	}
+	*/
+	
+	/*public String vratiZbir() throws RemoteException {
+		ValidatorKreditneKarticeStub stub = new ValidatorKreditneKarticeStub();
+		Saberi saberi = new Saberi();
+		GetCreditCardType 
+		Test test1 = new Test();
+		saberi.setA(getaClient());
+		saberi.setB(getbClient());
+		setTestWS(stub.test(test1).get_return());
+		setRez(stub.saberi(saberi).get_return());
+		return "";
+	}
+	*/
+	public void generisanjeSifre() throws RemoteException {
+		ValidatorKreditneKarticeStub stub = new ValidatorKreditneKarticeStub();
+		GetCreditCardType gcct = new GetCreditCardType();
+		gcct.setCreditCardNumber(getBroj());
+		setSifraTesta(stub.getCreditCardType(gcct).get_return());
+	}
+
+	public String getSifraTesta() {
+		return sifraTesta;
+	}
+
+	public void setSifraTesta(String sifraTesta) {
+		this.sifraTesta = sifraTesta;
+	}
+	
+}

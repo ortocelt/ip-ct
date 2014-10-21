@@ -1,0 +1,14 @@
+127.0.0.1 - - [22/Sep/2014:00:48:43 +0200] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [22/Sep/2014:00:49:16 +0200] "GET /CentarZaTestiranje/test.jsf HTTP/1.1" 200 2189
+127.0.0.1 - - [22/Sep/2014:00:49:16 +0200] "GET /CentarZaTestiranje/javax.faces.resource/jquery.timer.js.jsf?ln=js HTTP/1.1" 200 3484
+127.0.0.1 - - [22/Sep/2014:00:49:16 +0200] "GET /CentarZaTestiranje/javax.faces.resource/timer.js.jsf?ln=js HTTP/1.1" 200 5238
+127.0.0.1 - - [22/Sep/2014:00:49:16 +0200] "GET /CentarZaTestiranje/javax.faces.resource/hello.js.jsf?ln=js HTTP/1.1" 200 304
+127.0.0.1 - - [22/Sep/2014:00:49:16 +0200] "GET /CentarZaTestiranje/javax.faces.resource/jquery-2.1.1.js.jsf?ln=js HTTP/1.1" 200 247603
+127.0.0.1 - - [22/Sep/2014:00:49:16 +0200] "GET /CentarZaTestiranje/javax.faces.resource/theme.css.jsf?ln=primefaces-aristo HTTP/1.1" 200 28235
+127.0.0.1 - - [22/Sep/2014:00:49:16 +0200] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [22/Sep/2014:00:49:34 +0200] "POST /CentarZaTestiranje/test.jsf HTTP/1.1" 200 2370
+127.0.0.1 - - [22/Sep/2014:00:52:25 +0200] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [22/Sep/2014:00:52:29 +0200] "GET /CentarZaTestiranje/test.jsf HTTP/1.1" 200 2189
+127.0.0.1 - - [22/Sep/2014:00:52:35 +0200] "GET /CentarZaTestiranjev1.0/faces/feed.xml HTTP/1.1" 404 1025
+127.0.0.1 - - [22/Sep/2014:00:52:36 +0200] "GET /RSS/feedTestiranje1.xml HTTP/1.1" 200 1035
+127.0.0.1 - - [22/Sep/2014:00:52:38 +0200] "POST /CentarZaTestiranje/test.jsf HTTP/1.1" 200 2370

@@ -1,0 +1,29 @@
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+  <h:outputStylesheet name="template.css" library="css"/> 
+
+<h:title><ui:insert name="title" /></h:title>
+</h:head>
+
+<h:body>
+	<div id="tijelo">
+	<div id="header">
+	Dobrodosli u centar za testiranje
+	</div>
+	<div id="sadrzaj">
+	<div id="leftMenu">
+	<ui:insert name="leftMenu"></ui:insert>
+	</div>
+	<div id="content">
+	<ui:insert name="content"></ui:insert>
+	</div>	
+	</div>
+	<div id="footer">
+	Centar za testiranje 2014
+	</div>
+	</div>
+</h:body>
+</h:html>

@@ -1,0 +1,23 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:form>
+<h:panelGrid columns="1">
+Ime:<h:inputText id="ime" value="#{userBean.noviUser.ime}" requiredMessage="Niste unijeli ime" required="true"/>
+<h:message for="ime" style="color:red"/>
+Prezime:<h:inputText id="prezime" value="#{userBean.noviUser.prezime }" required="true" requiredMessage="Niste unijeli prezime"/>
+<h:message for="prezime" style="color:red"/>
+Username: <h:inputText id="username" value="#{userBean.noviUser.username}" requiredMessage="Niste unijeli username/korisnicko ime" required="true"/>
+<h:message for="username" style="color:red"/>
+Password: <h:inputSecret id="password" value="#{userBean.noviUser.password}" required="true" requiredMessage="Niste unijeli password/lozinku"/>
+<h:message for="password" style="color:red"/>
+
+<h:commandButton value="Registracija" action="#{userBean.registracijaTestera}"/>
+<h:outputText style="color:red;font-size:9px;" value="#{userBean.porukaRegister}"></h:outputText>
+</h:panelGrid>
+</h:form>
+
+</ui:composition>

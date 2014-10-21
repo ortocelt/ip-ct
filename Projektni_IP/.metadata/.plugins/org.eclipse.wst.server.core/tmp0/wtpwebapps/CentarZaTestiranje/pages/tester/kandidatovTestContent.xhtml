@@ -1,0 +1,38 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets">
+    			
+    			
+<h:form>
+<h:dataTable value="#{testBean.pitanje}" var="pitanje">
+<h:column>
+	<h:outputText value="#{pitanje.tekst}"/>	
+	
+<h:column>
+<h:form>
+	<h:dataTable value="#{testBean.odgovoriZaPitanjeKorTest(pitanje.id)}" var="odgovori">
+		<h:column>
+			<h:outputText value="#{odgovori.tekst}"/>			
+		</h:column>
+		<h:column>
+		
+		<h:selectBooleanCheckbox  value="#{testBean.provjeraOdgovora(odgovori.id)}" disabled="true"  >
+			
+		</h:selectBooleanCheckbox>
+		
+		</h:column>
+		<h:column>
+			<h:outputText value="#{testBean.labelaTacnostiSamoString(odgovori.id)}"/>
+		</h:column>
+		
+	</h:dataTable>
+	</h:form>
+</h:column></h:column>
+
+
+</h:dataTable>
+
+</h:form>
+
+</ui:composition>

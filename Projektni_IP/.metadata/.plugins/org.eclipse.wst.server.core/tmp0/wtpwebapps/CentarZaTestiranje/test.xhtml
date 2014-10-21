@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	<h:head>
+	 <h:outputScript library="js" name="hello.js"/> 
+	 <h:outputScript library="js" name="jquery-2.1.1.js"/>
+	 <h:outputScript library="js" name="timer.js"/>
+	 <h:outputScript library="js" name="jquery.timer.js"/>
+	 <h:outputScript library="js" name="jquery.timer.js"/>
+	 
+	</h:head>
+	<h:body onload="submit()">
+<h:form>
+Unesite broj kreditne kartice: <h:inputText value="#{wsBean.broj}" > </h:inputText>
+<h:commandButton value = "Akcija!" action="#{testBean.createRss()}"/>
+<h:outputText value="#{wsBean.sifraTesta}"/>
+<h:commandButton id="baton" value="JSTEst" onclick="setTimeout()"/>
+
+</h:form>
+ <h3>Example 2 - Countdown Timer</h3>
+    <span id="countdown">01:00:00</span>
+   
+</h:body>
+</html>

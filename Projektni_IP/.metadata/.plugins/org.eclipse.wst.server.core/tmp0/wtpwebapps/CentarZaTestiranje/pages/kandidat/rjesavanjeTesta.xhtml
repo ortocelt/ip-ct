@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<h:html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:f="http://java.sun.com/jsf/core" 
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+</h:head>
+
+<h:form>
+<h:dataTable value="#{testBean.getPitanje()}" var="pitanje">
+<h:column>
+	<h:outputText value="#{pitanje.tekst}"/>	
+	
+<h:column>
+<h:form>
+	<h:dataTable value="#{testBean.odgovoriZaPitanje(pitanje.id)}" var="odgovori">
+		<h:column>
+			<h:outputText value="#{odgovori.tekst}"/>
+			
+		</h:column>
+		<h:column>
+		<h:form>
+		<h:selectBooleanCheckbox value="#{testBean.checkbox}">
+		<f:ajax listener="#{testBean.insertOrDelete(odgovori)}"/>
+		</h:selectBooleanCheckbox>
+		</h:form>
+		</h:column>
+		
+	</h:dataTable>
+	</h:form>
+</h:column>
+</h:column>
+
+
+</h:dataTable>
+<h:commandButton value="Submit" action="#{testBean.predajTest()}"/>
+</h:form>
+
+
+</h:html>

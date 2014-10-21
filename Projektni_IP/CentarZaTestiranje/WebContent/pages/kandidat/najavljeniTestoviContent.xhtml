@@ -1,0 +1,43 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:form>
+<h:dataTable value="#{testBean.najavljeniTestovi}" var="test">
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="ID"/>
+	</f:facet>
+		<h:outputText value = "#{test.id}"/>
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Naziv"/>
+	</f:facet>
+		<h:outputText value = "#{test.naziv }"/>		
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Rok za prijavu"/>
+	</f:facet>
+		<h:outputText value="#{test.rok_za_prijavu}"/>
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Datum polaganja"/>
+	</f:facet>
+		<h:outputText value="#{test.datum_polaganja}"/>
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Prijava testa"/>
+	</f:facet>
+  <h:commandLink value="Prijavljivanje testa" action="#{wsBean.prijavaTesta(test.id, userBean.userId)}"/>
+</h:column>
+</h:dataTable>
+
+</h:form>
+
+</ui:composition>

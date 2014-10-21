@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RSS/WebContent/rss.jsp&apos; to &apos;rss.xhtml&apos;" description="Rename resource &apos;rss.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/rss.jsp" name="rss.xhtml" stamp="1410272039046" updateReferences="true"/>
+</session>

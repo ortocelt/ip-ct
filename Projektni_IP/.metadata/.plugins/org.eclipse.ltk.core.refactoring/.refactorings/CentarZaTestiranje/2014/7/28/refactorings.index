@@ -1,0 +1,17 @@
+1404656133626	Delete elements
+1404663522439	Delete elements
+1404663531715	Delete element
+1404663534476	Delete element
+1404663540016	Delete element
+1404663555194	Delete elements
+1404725194581	Encapsulate field 'kolekcijaTempOdgovora'
+1404752703370	Encapsulate field 'testerPregledPolaganja'
+1404752892477	Rename resource 'testerPregledPolaganja.jsp'
+1404752957239	Rename resource 'testerPregledPolaganjaContent.jsp'
+1404752969908	Rename resource 'testerPregledPolaganjaContent.xhtm'
+1404839415530	Rename resource 'kandidatiPoPolaganju.jsp'
+1404902008384	Rename resource 'kandidatiPoPolaganjuContent.jsp'
+1404915163263	Encapsulate field 'test_id'
+1404917813579	Rename resource 'kandidatovTest.jsp'
+1404918243334	Encapsulate field 'pitanje'
+1404918246940	Encapsulate field 'odgovori'

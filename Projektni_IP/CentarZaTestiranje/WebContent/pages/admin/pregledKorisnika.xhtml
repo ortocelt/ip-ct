@@ -1,0 +1,58 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:form>
+<h:dataTable id="korisnici" value="#{userBean.pregledUsera}" var="user">
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="ID"/>
+	</f:facet>
+		<h:outputText value="#{user.id}"/>
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Ime"/>
+	</f:facet>
+		<h:outputText value="#{user.ime}"/>		
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Prezime"/>
+	</f:facet>
+		<h:outputText value="#{user.prezime}"/>		
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Username"/>
+	</f:facet>
+		<h:outputText value="#{user.username}"/>		
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Aktivan"/>
+	</f:facet>
+		<h:outputText value="#{user.aktivan}"/>		
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Prava pristupa"/>
+	</f:facet>
+		<h:outputText value="#{user.privilegija}"/>		
+</h:column>
+<h:column>
+	<f:facet name="header">
+		<h:outputText value="Status"/>
+	</f:facet>
+		<h:commandButton value="Promjena statusa" action="#{userBean.promjenaStatusa(user.id,user.aktivan)}">
+		<f:ajax render="korisnici"/>		
+		</h:commandButton>
+		
+</h:column>
+
+</h:dataTable>
+</h:form>
+
+</ui:composition>

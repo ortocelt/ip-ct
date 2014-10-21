@@ -1,0 +1,18 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:form>
+<h:panelGrid columns="1" >
+<h:commandLink value="Prijavljeni testovi" action="/pages/kandidat/prijavljeniTestovi.xhtml"/>
+<h:commandLink value="Najavljeni testovi" action="/pages/kandidat/najavljeniTestovi.xhtml"/>
+<h:commandLink value="Danasnja polaganja" action="/pages/kandidat/danasnjaPolaganja.xhtml"/>
+<h:commandLink value="Danasnja polaganja preko beana" action="#{testBean.danPol}"/>
+<h:commandLink value="Logout" action="#{userBean.logout()}"/>
+</h:panelGrid>
+</h:form>
+
+</ui:composition>

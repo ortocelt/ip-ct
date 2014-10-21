@@ -1,0 +1,7 @@
+127.0.0.1 - - [02/Sep/2014:14:26:48 +0200] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [02/Sep/2014:14:27:36 +0200] "GET /CentarZaTestiranje/test.jsf HTTP/1.1" 200 807
+127.0.0.1 - - [02/Sep/2014:14:27:39 +0200] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [02/Sep/2014:14:58:33 +0200] "GET /CentarZaTestiranje/test.jsf HTTP/1.1" 500 4010
+127.0.0.1 - - [02/Sep/2014:14:58:48 +0200] "GET /CentarZaTestiranje/test.jsf HTTP/1.1" 500 3898
+127.0.0.1 - - [02/Sep/2014:14:59:54 +0200] "GET /CentarZaTestiranje/test.jsf HTTP/1.1" 500 3898
+127.0.0.1 - - [02/Sep/2014:15:07:16 +0200] "GET /CentarZaTestiranje/test.jsf HTTP/1.1" 500 3898

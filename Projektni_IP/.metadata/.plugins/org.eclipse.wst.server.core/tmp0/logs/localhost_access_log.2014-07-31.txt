@@ -1,0 +1,16 @@
+127.0.0.1 - - [31/Jul/2014:16:58:45 +0200] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [31/Jul/2014:17:00:58 +0200] "GET /WebServisSistemZaNaplatu/ HTTP/1.1" 200 3490
+127.0.0.1 - - [31/Jul/2014:17:01:01 +0200] "GET /WebServisSistemZaNaplatu/axis2-web/css/axis-style.css HTTP/1.1" 200 1587
+127.0.0.1 - - [31/Jul/2014:17:01:01 +0200] "GET /WebServisSistemZaNaplatu/axis2-web/images/axis_l.jpg HTTP/1.1" 200 12340
+127.0.0.1 - - [31/Jul/2014:17:01:01 +0200] "GET /WebServisSistemZaNaplatu/axis2-web/images/asf-logo.gif HTTP/1.1" 200 5866
+127.0.0.1 - - [31/Jul/2014:17:01:01 +0200] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [31/Jul/2014:17:01:10 +0200] "GET /WebServisSistemZaNaplatu/services/listServices HTTP/1.1" 200 3943
+127.0.0.1 - - [31/Jul/2014:17:01:28 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857
+127.0.0.1 - - [31/Jul/2014:17:05:24 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857
+127.0.0.1 - - [31/Jul/2014:17:05:25 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857
+127.0.0.1 - - [31/Jul/2014:17:05:32 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857
+127.0.0.1 - - [31/Jul/2014:17:05:32 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857
+127.0.0.1 - - [31/Jul/2014:17:05:32 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857
+127.0.0.1 - - [31/Jul/2014:17:05:33 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857
+127.0.0.1 - - [31/Jul/2014:17:05:33 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857
+127.0.0.1 - - [31/Jul/2014:17:05:39 +0200] "GET /WebServisSistemZaNaplatu/services/ValidatorKreditneKartice?wsdl HTTP/1.1" 200 4857

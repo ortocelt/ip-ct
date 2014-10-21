@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://webService" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://webService" xmlns:intf="http://webService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://webService" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="test">
+    <complexType/>
+   </element>
+   <element name="testResponse">
+    <complexType>
+     <sequence>
+      <element name="testReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="saberi">
+    <complexType>
+     <sequence>
+      <element name="a" type="xsd:int"/>
+      <element name="b" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="saberiResponse">
+    <complexType>
+     <sequence>
+      <element name="saberiReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="test1">
+    <complexType/>
+   </element>
+   <element name="test1Response">
+    <complexType>
+     <sequence>
+      <element name="test1Return" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="saberiResponse">
+
+      <wsdl:part element="impl:saberiResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="saberiRequest">
+
+      <wsdl:part element="impl:saberi" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="test1Response">
+
+      <wsdl:part element="impl:test1Response" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="test1Request">
+
+      <wsdl:part element="impl:test1" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="testResponse">
+
+      <wsdl:part element="impl:testResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="testRequest">
+
+      <wsdl:part element="impl:test" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ValidatorKreditneKartice">
+
+      <wsdl:operation name="test">
+
+         <wsdl:input message="impl:testRequest" name="testRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:testResponse" name="testResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="saberi">
+
+         <wsdl:input message="impl:saberiRequest" name="saberiRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:saberiResponse" name="saberiResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="test1">
+
+         <wsdl:input message="impl:test1Request" name="test1Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:test1Response" name="test1Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ValidatorKreditneKarticeSoapBinding" type="impl:ValidatorKreditneKartice">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="test">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="testRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="testResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="saberi">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="saberiRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="saberiResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="test1">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="test1Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="test1Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ValidatorKreditneKarticeService">
+
+      <wsdl:port binding="impl:ValidatorKreditneKarticeSoapBinding" name="ValidatorKreditneKartice">
+
+         <wsdlsoap:address location="http://localhost:8085/WebServisSistemZaNaplatu/services/ValidatorKreditneKartice"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

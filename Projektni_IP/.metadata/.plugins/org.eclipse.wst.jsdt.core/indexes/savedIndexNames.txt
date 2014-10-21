@@ -1,0 +1,8 @@
+INDEX VERSION 1.122+C:\Users\Milos\workspace\webServiceTutorial\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4182216021.index
+2732719233.index
+1123702437.index
+2891160321.index
+4261828474.index
+3024499043.index
+1129331691.index
